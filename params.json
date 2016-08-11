@@ -1,6 +1,6 @@
 {
   "name": "Fsechat",
   "tagline": "A real time chatting app built by Node, Express, MongoDB and AngularJS",
-  "body": "# FSEChat\r\nA real time chatting app built with Node, Express, MongoDB and AngularJS\r\n\r\n***\r\n# Usage\r\nClone the FSEChat Repo [FSEChat](https://github.com/QSSS/FSEChat.git)\r\nOpen your **command line tool** from `/FSEChat` and Run `npm install` and `bower install`\r\nThen Do `node server`\r\nGo to `http://localhost:5001` by using your web browser\r\n***\r\n",
+  "body": "# FSEChat\r\nA real time chatting app built with Node, Express, MongoDB and AngularJS\r\n\r\n***\r\n# Usage\r\nClone the FSEChat Repo [FSEChat](https://github.com/QSSS/FSEChat.git)\r\n\r\nOpen your **command line tool** from `/FSEChat` and Run `npm install` and `bower install`\r\n\r\nThen Do `node server`\r\n\r\nGo to `http://localhost:5001` by using your web browser\r\n***\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
