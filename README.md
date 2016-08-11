@@ -1,2 +1,2 @@
 # FSEChat
-A real time chatting app built by Node, Express, MongoDB and AngularJS
+A real time chatting app built with Node, Express, MongoDB and AngularJS
