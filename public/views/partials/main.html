@@ -1,0 +1,41 @@
+<section class="chat-app">
+    <div class="main col-sm-12 col-md-6 col-md-offset-3">
+
+        <div class="panel panel-primary">
+          <!-- head -->
+            <div class="panel-heading" id="accordion">
+                <span> FSE Chat Room</span>
+                <div class="btn-group pull-right">
+                    <a type="button" class="btn btn-default btn-xs" ng-click="logout()">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- body -->
+            <div class="panel-body">
+                <div class="chat">
+                    <section>
+                        <ul class="list-group">
+                            <li class="list-group-item" ng-repeat="message in messages">
+                                <div class="message">
+                                    <div class="author pull-left">{{ message.username }}</div>
+                                    <div class="date pull-right">{{ message.timestamp | date: 'MM.dd.yyyy HH:mma' }}</div>
+                                    <div class="body block">{{ message.content }}</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="panel-footer">
+                <form class="message-form" ng-submit="sendMessage()">
+                    <div class="input-group">
+                        <input class="form-control input-sm" placeholder="Type your message here..." ng-model="newMessage" ng-trim="false" autofocus>
+                        <span class="input-group-btn"><button class="btn btn-warning btn-sm" id="btn-chat">Post</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+</section>

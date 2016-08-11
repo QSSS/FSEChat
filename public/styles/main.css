@@ -1,0 +1,45 @@
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.chat-app {
+    vertical-align: middle;
+}
+.chat {
+    padding: 0px 40px;
+}
+.panel-body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 450px;
+
+}
+.author {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 20px;
+}
+.date {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 12px;
+}
+.chat li {
+    border-radius: 5px;
+    margin-bottom: 4px;
+    background-color: lightcyan;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.chat li .message .body {
+    clear: both;
+    padding-top: 10px;
+    font-family: 'Cormorant Garamond';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    word-break: break-all;
+}
