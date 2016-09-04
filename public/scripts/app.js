@@ -22,7 +22,6 @@ angular.module('chatApp', [
       });
 
 
-    // Intercept 401s and redirect you to login
     $httpProvider.interceptors.push(['$q', '$location', function($q, $location) {
       return {
         'responseError': function(response) {
@@ -38,7 +37,7 @@ angular.module('chatApp', [
     }]);
   })
   .run(function ($rootScope, $location, Auth) {
-    // Redirect to login if route requires auth and you're not logged in
+    // Redirect to login if session is empty
     $rootScope.$on('$routeChangeStart', function (event, next) {
       if (!Auth.isLoggedIn()) {
         $location.path('/login');

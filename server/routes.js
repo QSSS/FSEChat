@@ -1,7 +1,6 @@
 var bodyParser = require('body-parser'),
   chatCtrl = require('../controllers/chat'),
-  config = require('../config'),
-  index = require('../controllers');
+  config = require('../config');
 
 var jsonParser = bodyParser.json();
 var urlencodedParser = bodyParser.urlencoded({
@@ -9,7 +8,8 @@ var urlencodedParser = bodyParser.urlencoded({
 });
 
 exports.routes = function routes(app) {
-  app.get(config.endpoints.getMessages,jsonParser, chatCtrl.getMessages);
-  //app.get('/partials/*', index.partials);
-  //app.get('/*', index.index);
+  app.get(config.endpoints.getMessages, jsonParser, chatCtrl.getMessages);
+  app.get('/', function(req, res) {
+    res.render('index');
+  });
 }
